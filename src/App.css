@@ -415,6 +415,7 @@ nav a:hover {
   text-transform: uppercase;
 }
 
+/* ✅ 여기만 수정됨 (제목 밝게 변경) */
 .sectionTitle h2 {
   margin: 8px 0 24px;
   color: #e8f1ff;
