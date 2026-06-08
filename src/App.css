@@ -1,3 +1,4 @@
+```css
 * {
   box-sizing: border-box;
 }
@@ -79,6 +80,7 @@ nav a {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.06);
   transition: 0.2s;
+  font-weight: 700;
 }
 
 nav a:hover {
@@ -102,7 +104,7 @@ nav a:hover {
 .sideNote p {
   margin: 10px 0 0;
   color: #a9bed6;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 14px;
 }
 
@@ -117,10 +119,10 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 26px;
-  padding: 34px;
+  padding: 38px;
   border-radius: 30px;
   background:
-    linear-gradient(135deg, rgba(19, 45, 81, 0.94), rgba(11, 24, 43, 0.94));
+    linear-gradient(135deg, rgba(19, 45, 81, 0.96), rgba(11, 24, 43, 0.96));
   border: 1px solid rgba(143, 184, 255, 0.2);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 }
@@ -130,26 +132,31 @@ nav a:hover {
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  font-size: 15px;
 }
 
 .topPanel h1 {
-  margin: 14px 0 16px;
-  font-size: clamp(34px, 5vw, 64px);
-  line-height: 1.05;
+  margin: 14px 0 20px;
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 1.08;
   letter-spacing: -0.05em;
+  color: #f4fbff;
+  font-weight: 900;
+  text-shadow: 0 4px 20px rgba(0, 212, 255, 0.18);
 }
 
 .topPanel p {
   margin: 0;
   max-width: 760px;
-  color: #a9bed6;
-  font-size: 18px;
-  line-height: 1.7;
+  color: #c4d7ed;
+  font-size: 21px;
+  line-height: 1.9;
+  font-weight: 500;
 }
 
 .searchPanel {
   align-self: center;
-  padding: 24px;
+  padding: 26px;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -160,6 +167,7 @@ nav a:hover {
   margin-bottom: 12px;
   color: #d7e7fb;
   font-weight: 800;
+  font-size: 16px;
 }
 
 .searchRow {
@@ -177,6 +185,7 @@ nav a:hover {
   background: #f7fbff;
   color: #101828;
   font-size: 15px;
+  font-weight: 600;
 }
 
 .searchRow button {
@@ -199,12 +208,19 @@ nav a:hover {
 }
 
 .emptyState h2 {
-  margin: 0 0 10px;
+  margin: 0 0 14px;
+  color: #f4fbff;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.4;
 }
 
 .emptyState p {
   margin: 0;
-  color: #9fb4cf;
+  color: #c4d7ed;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
 }
 
 .summaryGrid {
@@ -240,14 +256,17 @@ nav a:hover {
 
 .summaryCard strong {
   display: block;
-  margin-top: 12px;
-  font-size: 28px;
-  line-height: 1.2;
+  margin-top: 14px;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 900;
 }
 
 .summaryCard p {
-  margin: 10px 0 0;
+  margin: 12px 0 0;
   color: #66788f;
+  line-height: 1.7;
+  font-weight: 600;
 }
 
 .summaryCard.dark p {
@@ -272,13 +291,17 @@ nav a:hover {
 }
 
 .totalRisk span {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.88);
   font-weight: 800;
+  font-size: 15px;
 }
 
 .totalRisk strong {
-  font-size: 58px;
-  letter-spacing: -0.06em;
+  font-size: 72px;
+  letter-spacing: -0.08em;
+  line-height: 1;
+  color: white;
+  font-weight: 900;
 }
 
 .scoreRing {
@@ -316,33 +339,44 @@ nav a:hover {
 }
 
 .riskBox span {
-  color: #6f8195;
+  color: rgba(255, 255, 255, 0.86);
   font-weight: 900;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.08em;
 }
 
 .riskBox h2 {
-  margin: 8px 0 24px;
-  color: #0a3764;
+  margin: 10px 0 24px;
+  color: white;
+  font-size: 34px;
+  line-height: 1.25;
+  font-weight: 800;
 }
 
 .riskBox strong {
   display: block;
-  font-size: 52px;
-  letter-spacing: -0.06em;
+  font-size: 64px;
+  letter-spacing: -0.07em;
+  line-height: 1;
+  margin: 10px 0;
+  color: white;
+  font-weight: 900;
 }
 
 .riskBox p {
   margin: 8px 0 18px;
   font-weight: 900;
+  font-size: 22px;
+  color: white;
 }
 
 .riskBox em {
   display: block;
-  color: #5f7188;
-  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.9;
   font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .safe {
@@ -355,24 +389,6 @@ nav a:hover {
 
 .danger {
   background: linear-gradient(135deg, #fa5252, #c92a2a);
-}
-
-.riskBox.safe,
-.riskBox.warning,
-.riskBox.danger {
-  color: white;
-}
-
-.riskBox.safe h2,
-.riskBox.warning h2,
-.riskBox.danger h2,
-.riskBox.safe span,
-.riskBox.warning span,
-.riskBox.danger span,
-.riskBox.safe em,
-.riskBox.warning em,
-.riskBox.danger em {
-  color: rgba(255, 255, 255, 0.84);
 }
 
 .chartSection {
@@ -401,9 +417,10 @@ nav a:hover {
 }
 
 .sectionTitle h2 {
-  margin: 8px 0 22px;
+  margin: 8px 0 24px;
   color: #0a3764;
-  font-size: 26px;
+  font-size: 30px;
+  line-height: 1.25;
 }
 
 .guideSection {
@@ -422,11 +439,12 @@ nav a:hover {
 }
 
 .guideCard li {
-  padding: 16px 18px;
+  padding: 18px 20px;
   border-radius: 16px;
   background: #edf6ff;
   color: #294057;
   font-weight: 800;
+  line-height: 1.7;
 }
 
 .guideCard li::before {
@@ -456,7 +474,7 @@ nav a:hover {
 .methodList p {
   margin: 10px 0 0;
   color: #40546d;
-  line-height: 1.6;
+  line-height: 1.8;
   font-weight: 700;
 }
 
@@ -472,10 +490,12 @@ footer {
 
 footer p {
   margin: 0;
+  line-height: 1.7;
 }
 
 footer span {
   color: #64dfff;
+  line-height: 1.7;
 }
 
 @media (max-width: 1100px) {
@@ -543,3 +563,4 @@ footer span {
     flex-direction: column;
   }
 }
+```
